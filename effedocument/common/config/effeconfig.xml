@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<effeconfig>
+	<database>
+		<user>root</user>
+		<password></password>
+		<host>localhost</host>
+		<dbname>effedocument</dbname>
+	</database>
+	<ldap>
+		<server>ldap://127.0.0.1</server>
+		<partialdn>ou=myou,o=myo,dc=mydc,dc=it</partialdn>
+	</ldap>
+	<other>
+		<dirallegati>../documenti_allegati/</dirallegati>
+		<effelog active='true'>effedoclog.txt</effelog>
+	</other>
+</effeconfig>
