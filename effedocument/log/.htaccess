@@ -1,0 +1,2 @@
+# I file di log contengono le operazioni degli utenti: non devono essere accessibili dal web
+Require all denied

@@ -1,0 +1,14 @@
+# eFFe Document - cartella degli allegati caricati dagli utenti
+# Nessuno script deve poter essere eseguito da qui.
+# Niente direttiva "Options": molti hosting condivisi non la permettono e
+# risponderebbero con un errore 500 a ogni allegato. L'elenco dei file e'
+# impedito dal file index.html presente nella cartella.
+<FilesMatch "\.(php\d?|phtml|pht|phps|phar|inc|cgi|pl|py|sh|asp|aspx|jsp|shtml)$">
+    Require all denied
+</FilesMatch>
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+</IfModule>
